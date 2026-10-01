@@ -132,6 +132,11 @@ $settingsText = $settingsText.Substring(0, $start) + $replacement + $settingsTex
 $settingsText = $settingsText.Replace('"close_app":           close_app,', '"close_app":           lambda: close_app(),')
 $settingsText = $settingsText.Replace('    value       = params.get("value", None)', '    value       = params.get("value", None)' + [Environment]::NewLine + '    target      = str(params.get("target", "") or params.get("app", "")).strip()')
 $settingsText = $settingsText.Replace('    if action == "volume_set":', '    if action == "close_app":' + [Environment]::NewLine + '        return close_app(target)' + [Environment]::NewLine + [Environment]::NewLine + '    if action == "volume_set":')
+$targetProp = '            "target": {' + [Environment]::NewLine + '                "type": "STRING",' + [Environment]::NewLine + '                "description": "Specific application to close, such as Chrome, Notepad, VS Code. Never target ALAN."' + [Environment]::NewLine + '            },' + [Environment]::NewLine
+$needle = '            "value": {'
+if ($settingsText.Contains($needle) -and -not $settingsText.Contains('"target": {')) {
+    $settingsText = $settingsText.Replace($needle, $targetProp + $needle)
+}
 [IO.File]::WriteAllText($settings, $settingsText)
 
 $controlText = [IO.File]::ReadAllText($control)
