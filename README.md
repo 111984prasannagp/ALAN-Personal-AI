@@ -1,9 +1,5 @@
 # ◈ ALAN — Personal AI 🤖
 
-<p align="center">
-  <img src="https://assets-v2.lottiefiles.com/a/d78f6988-1178-11ee-8e1e-7bd9a501ffc9/EpDrHfrpkB.png" alt="Little power robot — ALAN assistant visual" width="220">
-</p>
-
 > **⚡ Your personal AI. Your system. Your control.**
 
 <p align="center">
