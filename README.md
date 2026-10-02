@@ -1,6 +1,14 @@
 # ◈ ALAN — Personal AI 🤖
 
+<p align="center">
+  <img src="assets/alan-orb.svg" alt="ALAN Personal AI futuristic orb" width="760">
+</p>
+
 > **⚡ Your personal AI. Your system. Your control.**
+
+<p align="center">
+  <img src="assets/alan-emblem.svg" alt="ALAN emblem" width="180">
+</p>
 
 ---
 
@@ -9,10 +17,10 @@
 **✦ FOUNDER & CREATOR ✦**
 ### G.P. PRASANNA
 
-**⚙️ MAIN DEVELOPER**
+**⚙️ MAIN DEVELOPER**  
 **G.P. PRASANNA**
 
-`● PERSONAL PROJECT   •   🔒 NON-COMMERCIAL   •   🧠 AI   •   ⚡ AUTOMATION`
+● PERSONAL PROJECT • 🔒 NON-COMMERCIAL • 🧠 AI • ⚡ AUTOMATION
 
 ---
 
@@ -26,6 +34,18 @@ The project is being progressively rebuilt as an **independent, modular AI syste
 > 👤 **Founder & Creator:** G.P. PRASANNA  
 > 💻 **Main Developer:** G.P. PRASANNA  
 > 🔒 **Use:** Personal / Non-Commercial
+
+---
+
+## ⚡ Visual Identity
+
+ALAN includes a dedicated visual asset set for project branding:
+
+- ◈ **ALAN Emblem** — assets/alan-emblem.svg
+- 🔵 **ALAN Reactor Orb** — assets/alan-orb.svg
+- ✨ **Animated Showcase** — docs/alan-showcase.html
+
+GitHub supports repository images through relative paths, so these visuals can be displayed directly in the README. The animated showcase is kept as a separate HTML experience. citeturn0search0turn0search1
 
 ---
 
@@ -51,6 +71,7 @@ ALAN-Personal-AI/
 │   ├── 🎙️ voice/       # STT/TTS/audio
 │   └── 🔊 wake/        # Wake-word subsystem
 │
+├── 🎨 assets/           # ALAN visual identity
 ├── 📚 docs/             # Architecture and maintenance docs
 ├── 🧰 scripts/          # Startup and diagnostics
 ├── 🧪 tests/            # Automated tests
@@ -63,7 +84,7 @@ ALAN-Personal-AI/
 ## ✦ Design Principles
 
 - 🧩 **Modular** — keep feature systems in separate modules.
-- 🚀 **Simple Core** — keep `main.py` as a bootstrap only.
+- 🚀 **Simple Core** — keep main.py as a bootstrap only.
 - 🛡️ **Safe Actions** — sensitive actions use permission/confirmation controls.
 - 🔌 **Replaceable Components** — AI, voice, wake-word, and UI components stay modular.
 - 👤 **Clear Ownership** — ALAN's project identity and ownership remain documented.
@@ -89,7 +110,7 @@ The repository is being developed as an **independent, modular ALAN implementati
 
 ### Current focus
 
-`🧠 AI`  •  `🎙️ Voice`  •  `🧩 Modules`  •  `💾 Memory`  •  `💻 Computer Control`  •  `🛡️ Security`
+🧠 AI • 🎙️ Voice • 🧩 Modules • 💾 Memory • 💻 Computer Control • 🛡️ Security
 
 ---
 
@@ -97,7 +118,7 @@ The repository is being developed as an **independent, modular ALAN implementati
 
 ```bat
 python -m venv .venv
-.venv\\Scripts\\activate
+.venv\Scripts\activate
 pip install -r requirements-alan.txt
 python main.py
 ```
@@ -105,7 +126,7 @@ python main.py
 ### 🔍 Diagnostics
 
 ```bat
-scripts\\diagnose.bat
+scripts\diagnose.bat
 ```
 
 ---
