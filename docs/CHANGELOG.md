@@ -21,8 +21,7 @@ For each change:
 
 ### Testing notes
 - Persistent memory was confirmed to recall existing memories and newly remembered preferences during voice testing.
-- The remaining issue under investigation is unexpected `Interrupted — listening...` behavior during startup/briefing, which prevents reliable command listening.
-
+- The remaining issue under investigation is unexpected Interrupted — listening... behavior during startup/briefing, which prevents reliable command listening.
 
 ## 2026-10-02
 
@@ -30,6 +29,13 @@ For each change:
 - Removed the external foundation bridge from the ALAN lifecycle.
 - Removed the external foundation downloader and obsolete foundation-specific scripts.
 - Updated architecture and dependency documentation so ALAN starts from its own modular core.
-- Updated project ownership documentation: **G.P. PRASANNA — Founder, Creator, and Main Developer**.
+- Updated project ownership documentation: G.P. PRASANNA — Founder, Creator, and Main Developer.
 - Current repository files no longer intentionally reference the previous assistant project by name.
 - Historical Git commits are retained by GitHub and are not rewritten by this cleanup.
+
+### ALAN visual identity
+- Added assets/alan-emblem.svg as the reusable ALAN emblem.
+- Added assets/alan-orb.svg as the project hero visual.
+- Added docs/alan-showcase.html with a browser-side animated ALAN orb and feature badges.
+- Updated the README to display the visual assets and document the new visual identity.
+- No ALAN application UI was changed; the existing UI remains frozen.
