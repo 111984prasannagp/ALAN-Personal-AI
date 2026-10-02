@@ -9,7 +9,7 @@ For each change:
 - Record what changed, why it changed, and how it was tested.
 - Use a clear commit message describing the change.
 - Keep related changes together; do not leave important fixes undocumented.
-- Preserve the original Mark-LV attribution/license requirements.
+- Keep project ownership, third-party dependencies, and applicable licenses documented accurately.
 - Keep the ALAN UI frozen unless the user explicitly requests a UI change.
 
 ## 2026-10-01
@@ -26,7 +26,10 @@ For each change:
 
 ## 2026-10-02
 
-### Project identity
-- Added the official ALAN project ownership information: **G.P. PRASANNA — Founder, Creator, and Main Developer**.
-- Updated project documentation to clearly distinguish ALAN-owned project work from third-party source history.
-- This identity/documentation change does not alter the frozen ALAN UI.
+### ALAN independence conversion
+- Removed the external foundation bridge from the ALAN lifecycle.
+- Removed the external foundation downloader and obsolete foundation-specific scripts.
+- Updated architecture and dependency documentation so ALAN starts from its own modular core.
+- Updated project ownership documentation: **G.P. PRASANNA — Founder, Creator, and Main Developer**.
+- Current repository files no longer intentionally reference the previous assistant project by name.
+- Historical Git commits are retained by GitHub and are not rewritten by this cleanup.
