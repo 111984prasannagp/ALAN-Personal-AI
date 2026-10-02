@@ -1,13 +1,15 @@
 # ◈ ALAN — Personal AI 🤖
 
 <p align="center">
-  <img src="assets/alan-orb.svg" alt="ALAN Personal AI futuristic orb" width="760">
+  <img src="https://assets-v2.lottiefiles.com/a/d78f6988-1178-11ee-8e1e-7bd9a501ffc9/EpDrHfrpkB.png" alt="Little power robot — ALAN assistant visual" width="220">
 </p>
 
 > **⚡ Your personal AI. Your system. Your control.**
 
 <p align="center">
-  <img src="assets/alan-emblem.svg" alt="ALAN emblem" width="180">
+  <a href="https://lottiefiles.com/free-animation/little-power-robot-BtnSKUJQgN">
+    <img src="assets/alan-emblem.svg" alt="ALAN emblem" width="180">
+  </a>
 </p>
 
 ---
@@ -41,11 +43,12 @@ The project is being progressively rebuilt as an **independent, modular AI syste
 
 ALAN includes a dedicated visual asset set for project branding:
 
+- 🤖 **Little Power Robot** — LottieFiles animation reference
 - ◈ **ALAN Emblem** — assets/alan-emblem.svg
 - 🔵 **ALAN Reactor Orb** — assets/alan-orb.svg
 - ✨ **Animated Showcase** — docs/alan-showcase.html
 
-GitHub supports repository images through relative paths, so these visuals can be displayed directly in the README. The animated showcase is kept as a separate HTML experience. citeturn0search0turn0search1
+The robot visual is sourced from the free **Little power robot** animation by Md. Fazle Hasan, listed by LottieFiles under the Lottie Simple License. The source page provides Lottie, dotLottie, SVG, GIF and other export formats. citeturn0view0
 
 ---
 
