@@ -1,6 +1,11 @@
 # ALAN — Professional Personal AI
 
-ALAN is a modular personal AI assistant project based on the functional foundation of [Mark-LV](https://github.com/FatihMakes/Mark-LV).
+**Founder & Creator:** G.P. PRASANNA  
+**Main Developer:** G.P. PRASANNA  
+**Project:** ALAN Personal AI  
+**Project type:** Personal / non-commercial
+
+ALAN is a personal AI assistant project created and developed by **G.P. PRASANNA**. The current repository is being progressively rebuilt into an independent, modular ALAN implementation.
 
 > Personal / non-commercial project.
 
