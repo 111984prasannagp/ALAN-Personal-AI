@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" role="img" aria-labelledby="title desc">
+<title id="title">ALAN Personal AI animated hero</title>
+<desc id="desc">Professional animated hero banner for ALAN Personal AI.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" x2="1">
+    <stop offset="0" stop-color="#070B14"/>
+    <stop offset=".55" stop-color="#0B1630"/>
+    <stop offset="1" stop-color="#101C3D"/>
+  </linearGradient>
+  <linearGradient id="glow" x1="0" x2="1">
+    <stop offset="0" stop-color="#22D3EE"/>
+    <stop offset="1" stop-color="#8B5CF6"/>
+  </linearGradient>
+  <style>
+    .grid{animation:drift 10s linear infinite}
+    .ring{transform-origin:700px 120px;animation:spin 12s linear infinite}
+    .pulse{animation:pulse 2.6s ease-in-out infinite}
+    .scan{animation:scan 3.2s ease-in-out infinite}
+    @keyframes drift{to{transform:translateX(-48px)}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes pulse{50%{opacity:.45;transform:scale(1.06)}}
+    @keyframes scan{0%,100%{transform:translateY(-46px);opacity:.1}50%{transform:translateY(46px);opacity:.65}}
+  </style>
+</defs>
+<rect width="900" height="240" rx="28" fill="url(#bg)"/>
+<g opacity=".16" class="grid" stroke="#22D3EE" stroke-width="1">
+  <path d="M0 40H950M0 80H950M0 120H950M0 160H950M0 200H950"/>
+  <path d="M40 0V260M80 0V260M120 0V260M160 0V260M200 0V260M240 0V260M280 0V260M320 0V260M360 0V260M400 0V260M440 0V260M480 0V260M520 0V260M560 0V260M600 0V260M640 0V260M680 0V260M720 0V260M760 0V260M800 0V260M840 0V260"/>
+</g>
+<circle cx="700" cy="120" r="74" fill="none" stroke="url(#glow)" stroke-width="2" opacity=".45"/>
+<circle class="ring" cx="700" cy="120" r="88" fill="none" stroke="#22D3EE" stroke-width="2" stroke-dasharray="8 14"/>
+<circle class="pulse" cx="700" cy="120" r="42" fill="#0A1225" stroke="#67E8F9" stroke-width="3"/>
+<path class="scan" d="M662 120H738" stroke="#8B5CF6" stroke-width="4"/>
+<path d="M680 128 Q700 144 720 128" fill="none" stroke="#67E8F9" stroke-width="3" stroke-linecap="round"/>
+<circle cx="687" cy="112" r="4" fill="#67E8F9"/><circle cx="713" cy="112" r="4" fill="#67E8F9"/>
+<text x="60" y="92" fill="#E6EDF3" font-family="Segoe UI,Arial,sans-serif" font-size="54" font-weight="800">ALAN</text>
+<text x="62" y="126" fill="#94A3B8" font-family="Segoe UI,Arial,sans-serif" font-size="22">Personal AI • Automation • Control</text>
+<rect x="62" y="148" width="290" height="3" rx="2" fill="url(#glow)"/>
+<text x="62" y="182" fill="#CBD5E1" font-family="Segoe UI,Arial,sans-serif" font-size="17">Modular • Private • Extensible</text>
+</svg>
