@@ -1,2 +1,5 @@
-# ALAN-specific dependencies
-# Mark-LV's original requirements remain separate in the foundation.
+# ALAN Personal AI dependencies
+#
+# Dependencies are added here only when an ALAN module directly requires them.
+# The project does not install or fetch another assistant project as a runtime
+# foundation.
