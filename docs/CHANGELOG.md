@@ -41,3 +41,6 @@ For each change:
 - No ALAN application UI was changed; the existing UI remains frozen.
 ### Contribution milestone
 - Added `docs/CONTRIBUTION_PLAN.md` to define a transparent plan for building 100 genuine project contributions through useful ALAN development work.
+
+### Configuration tests
+- Added focused tests for independent settings defaults, JSON persistence, and fallback behavior when no configuration file exists.
