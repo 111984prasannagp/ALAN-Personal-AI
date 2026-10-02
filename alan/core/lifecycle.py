@@ -1,26 +1,29 @@
-from pathlib import Path
+"""ALAN application lifecycle.
 
-from ..foundation.mark_lv import MarkLVRunner
+The lifecycle owns startup/shutdown orchestration only. Feature implementations
+live in their dedicated ALAN modules and are registered through the component
+layer as those modules become available.
+"""
 
 
 class Lifecycle:
-    """High-level ALAN application lifecycle."""
+    """High-level lifecycle for the ALAN Personal AI application."""
 
     def __init__(self, settings):
         self.settings = settings
         self.components = []
-        self.project_root = Path(__file__).resolve().parents[2]
-        self.mark_lv = MarkLVRunner(self.project_root)
+
+    def register(self, component):
+        """Register an ALAN component for future lifecycle management."""
+        self.components.append(component)
 
     def start(self):
         print(f"{self.settings.app_name} {self.settings.version}")
         print(f"Assistant: {self.settings.assistant_name}")
+        print("ALAN modular core initialized.")
+        print("Feature modules are loaded through the ALAN component architecture.")
 
-        if self.mark_lv.available():
-            print("Mark-LV foundation detected.")
-            print("Starting ALAN foundation...")
-            return self.mark_lv.start()
-
-        print("Modular architecture initialized.")
-        print("Mark-LV foundation not found.")
-        print("Run: powershell -ExecutionPolicy Bypass -File scripts\\sync_mark_lv.ps1")
+        for component in self.components:
+            start = getattr(component, "start", None)
+            if callable(start):
+                start()
