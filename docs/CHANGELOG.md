@@ -39,3 +39,5 @@ For each change:
 - Added docs/alan-showcase.html with a browser-side animated ALAN orb and feature badges.
 - Updated the README to display the visual assets and document the new visual identity.
 - No ALAN application UI was changed; the existing UI remains frozen.
+### Contribution milestone
+- Added `docs/CONTRIBUTION_PLAN.md` to define a transparent plan for building 100 genuine project contributions through useful ALAN development work.
