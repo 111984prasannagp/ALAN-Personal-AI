@@ -22,3 +22,11 @@ For each change:
 ### Testing notes
 - Persistent memory was confirmed to recall existing memories and newly remembered preferences during voice testing.
 - The remaining issue under investigation is unexpected `Interrupted — listening...` behavior during startup/briefing, which prevents reliable command listening.
+
+
+## 2026-10-02
+
+### Project identity
+- Added the official ALAN project ownership information: **G.P. PRASANNA — Founder, Creator, and Main Developer**.
+- Updated project documentation to clearly distinguish ALAN-owned project work from third-party source history.
+- This identity/documentation change does not alter the frozen ALAN UI.
