@@ -3,18 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ALAN • Personal AI</title>
+<title>ALAN • System Showcase</title>
 <style>
-*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#02060b;color:#dff9ff;font-family:Inter,Segoe UI,Arial,sans-serif;display:grid;place-items:center;overflow:hidden}
-.scene{width:min(1100px,94vw);padding:48px;text-align:center;position:relative}
-h1{font-size:clamp(54px,10vw,120px);letter-spacing:.18em;margin:0;text-shadow:0 0 18px #1ccfff}
-p{letter-spacing:.28em;color:#8ac9dc}
-.orb{width:260px;height:260px;margin:55px auto 35px;border-radius:50%;background:radial-gradient(circle at 50% 42%,#eaffff 0 3%,#45ddff 12%,#0876be 42%,#020b14 70%);box-shadow:0 0 35px #16cfff,0 0 100px #087cc855;position:relative;animation:float 3s ease-in-out infinite}
-.orb:before,.orb:after{content:"";position:absolute;inset:-35px;border:2px solid #21d5ff66;border-radius:50%;animation:spin 8s linear infinite}
-.orb:after{inset:-65px;border-style:dashed;animation-direction:reverse;animation-duration:12s}
-.eye{position:absolute;top:105px;width:58px;height:22px;border-radius:50%;background:#dffcff;box-shadow:0 0 22px #52eaff}.left{left:52px}.right{right:52px}
-.badges{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.badge{border:1px solid #27cfff66;border-radius:999px;padding:10px 18px;background:#07131caa}
-@keyframes float{50%{transform:translateY(-18px)}}@keyframes spin{to{transform:rotate(360deg)}}
+:root{--bg:#05080d;--panel:#0b1119;--line:#1d3545;--cyan:#56d9ff;--text:#dcecf2;--muted:#78909d}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% 45%,#0c1b26 0,#05080d 45%,#020406 100%);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;overflow:hidden}
+.app{width:min(1180px,94vw);margin:auto;padding:34px 0}
+header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #16303e;padding-bottom:18px}
+.logo{font-size:24px;font-weight:700;letter-spacing:.22em}.status{font-size:11px;letter-spacing:.18em;color:#7fe4ff}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#57e1ff;box-shadow:0 0 12px #57e1ff;margin-right:8px}
+.subtitle{text-align:center;margin:48px 0 18px;color:var(--muted);font-size:12px;letter-spacing:.3em}
+.system{position:relative;height:510px;display:grid;place-items:center}
+.core{width:190px;height:190px;border-radius:50%;border:1px solid #4cdcff88;background:radial-gradient(circle,#173b4a 0,#08131b 55%,#05090e 72%);box-shadow:0 0 35px #1dcfff33,inset 0 0 35px #1dcfff22;display:grid;place-items:center;z-index:3;animation:pulse 3s ease-in-out infinite}
+.core span{font-size:30px;font-weight:700;letter-spacing:.25em;margin-left:.25em;text-shadow:0 0 16px #56d9ff}
+.ring{position:absolute;border:1px solid #2e6276;border-radius:50%;width:245px;height:245px;animation:spin 16s linear infinite}
+.ring.two{width:310px;height:310px;border-style:dashed;opacity:.45;animation-duration:25s;animation-direction:reverse}
+.ring:after{content:"";position:absolute;width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan);top:50%;left:-4px}
+.modules{position:absolute;inset:0}
+.card{position:absolute;width:190px;padding:15px 17px;border:1px solid #193847;background:#071018dd;border-radius:12px;text-align:left;box-shadow:0 10px 30px #0005}
+.card b{display:block;font-size:12px;letter-spacing:.14em}.card small{display:block;color:var(--muted);margin-top:7px;font-size:11px}
+.c1{left:0;top:45px}.c2{left:0;bottom:48px}.c3{right:0;top:45px}.c4{right:0;bottom:48px}
+.card:before{content:"";position:absolute;top:50%;width:110px;height:1px;background:linear-gradient(90deg,#56d9ff00,#56d9ff66);right:-110px}
+.c3:before,.c4:before{right:auto;left:-110px;background:linear-gradient(90deg,#56d9ff66,#56d9ff00)}
+.command{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:min(560px,80%);border:1px solid #173846;background:#061018e8;border-radius:10px;padding:11px 15px;text-align:left;font:12px Consolas,monospace;color:#8fd9ed}
+.cursor{animation:blink 1s steps(2) infinite}
+footer{text-align:center;color:#526a75;font-size:10px;letter-spacing:.2em;margin-top:18px}
+@keyframes pulse{50%{transform:scale(1.035);box-shadow:0 0 55px #1dcfff44,inset 0 0 45px #1dcfff33}}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes blink{50%{opacity:0}}
 </style>
 </head>
-<body><main class="scene"><p>✦ FOUNDER • CREATOR • MAIN DEVELOPER ✦</p><h1>ALAN</h1><div class="orb"><i class="eye left"></i><i class="eye right"></i></div><p>YOUR AI • YOUR SYSTEM • YOUR CONTROL</p><div class="badges"><span class="badge">🧠 MEMORY</span><span class="badge">🎙️ VOICE</span><span class="badge">💻 COMPUTER</span><span class="badge">⚡ AUTOMATION</span><span class="badge">🌐 WEB</span></div><p>G.P. PRASANNA</p></main></body></html>
+<body>
+<main class="app">
+<header><div class="logo">ALAN</div><div class="status"><i class="dot"></i>SYSTEM READY</div></header>
+<div class="subtitle">PERSONAL AI • MODULAR SYSTEM • G.P. PRASANNA</div>
+<section class="system">
+<div class="ring"></div><div class="ring two"></div>
+<div class="core"><span>ALAN</span></div>
+<div class="modules">
+<div class="card c1"><b>🧠 MEMORY</b><small>Persistent context & preferences</small></div>
+<div class="card c2"><b>🎙 VOICE</b><small>Speech input & response pipeline</small></div>
+<div class="card c3"><b>💻 COMPUTER</b><small>Desktop actions & system control</small></div>
+<div class="card c4"><b>🧩 SKILLS</b><small>Plugins, tools & automation</small></div>
+</div>
+<div class="command">ALAN://core &gt; loading modular components... <span class="cursor">█</span></div>
+</section>
+<footer>YOUR AI • YOUR SYSTEM • YOUR CONTROL</footer>
+</main>
+</body>
+</html>
