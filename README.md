@@ -40,10 +40,9 @@ ALAN-Personal-AI/
 
 - Keep feature systems in separate modules.
 - Keep `main.py` as a bootstrap only.
-- Preserve original Mark-LV attribution and license information.
 - Keep sensitive actions behind a permission/confirmation layer.
 - Make AI, voice, wake-word and UI components replaceable.
-- Keep the original foundation traceable instead of hiding its origin.
+- Keep ALAN's project identity and ownership clear.
 
 ## Wake phrases
 
@@ -52,17 +51,11 @@ Target phrases:
 - **Hey ALAN**
 - **Hey man**
 
-A real offline acoustic wake-word model is required to recognize those phrases. Renaming the original Mark-LV `hey_jarvis` model would not change what it recognizes, so ALAN keeps wake detection behind a dedicated provider interface.
-
-## Mark-LV foundation
-
-Original project: https://github.com/FatihMakes/Mark-LV
-
-The Mark-LV project is licensed under **CC BY-NC 4.0**. Its attribution and license must remain with any copied/adapted foundation code. Commercial use of that licensed material is not permitted.
+Wake detection is kept behind a dedicated provider interface so the acoustic model can be changed without changing the rest of ALAN.
 
 ## Current repository status
 
-The professional modular foundation is uploaded. The integration phase is designed to bring the original Mark-LV action, voice, memory, dashboard and UI implementations into the separated ALAN modules while keeping the original source traceable.
+The repository is being developed as an independent, modular ALAN implementation created by G.P. PRASANNA.
 
 ## Local development
 
