@@ -44,3 +44,7 @@ Use concise messages such as:
 **Main Developer:** G.P. PRASANNA
 
 ALAN is a personal, non-commercial project.
+
+
+## Commit quality
+Use a clear imperative commit message and keep each commit focused on one logical change.
